@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Technique Study Timer</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> STUDY TIMER</h1>
+        </header>
+
+        <section class="inputs">
+            <div class="input-group">
+                <label for="study-hours">Study Hours: </label>
+                <input type="number" id="study-hours" value="5" min="0">
+                <label for="study-minutes">Minutes: </label>
+                <input type="number" id="study-minutes" value="30" min="0" max="59">
+            </div>
+
+            
+                <div class="input-group ">
+                    <label for="interval-minutes">Interval Minutes: </label>
+                    <input type="number" id="interval-minutes" value="30" min="1" max="60">
+                </div>
+    
+                <div class="input-group ">
+                    <label for="break-minutes">Break Minutes: </label>
+                    <input type="number" id="break-minutes" value="5" min="1" max="30">
+                </div>
+            
+            
+
+            <div class="input-group">
+                <label for="volume-control">Notification Volume: </label>
+                <input type="range" id="volume-control" value="0.5" step="0.01" min="0.01" max="1">
+                <span id="volume-value">50%</span>
+            </div>
+        </section>
+
+
+
+        <!--
+        <section class="timer-display">
+            <p>Main Study Timer:</p>
+            <div class="timer-circle">
+                <span id="main-timer">5:30:00</span>
+            </div>
+        </section>
+
+        <section class="timer-display">
+            <p>Interval Timer:</p>
+            <div class="timer-circle">
+                <span id="interval-timer">30:00</span>
+            </div>
+        </section>
+        <section class="timer-display">
+            <p>Break Timer:</p>
+            <div class="timer-circle">
+                <span id="break-timer">5:00</span>
+            </div>
+        </section>-->
+        
+    <div class="container2">
+        <div class="box red">
+            <div class="child red-child">
+                
+                <section class="timer-display">
+                <p>Main Study Timer:</p>
+                <div class="timer-circle">
+                    <span id="main-timer">5:30:00</span>
+                </div>
+            </section>
+        </div>
+            
+        </div>
+        <div class="box lower">
+            <div class="yellow"><section class="timer-display">
+                <p>Interval Timer:</p>
+                <div class="timer-circle">
+                    <span id="interval-timer">30:00</span>
+                </div>
+            </section></div>
+            <div class="blue"><section class="timer-display">
+                <p>Break Timer:</p>
+                <div class="timer-circle">
+                    <span id="break-timer">5:00</span>
+                </div>
+            </section></div>
+        </div>
+    </div>
+
+
+        
+
+
+
+
+
+        <section class="controls">
+            <button id="start-btn" onclick="startTimers()">Start</button>
+            <button id="pause-btn" onclick="pauseTimers()" class="hidden">Pause</button>
+            <button id="resume-btn" onclick="resumeTimers()" class="hidden">Resume</button>
+            <button onclick="resetTimers()">Reset</button>
+            <button id="stop-sound-btn" onclick="stopSound()" class="hidden">Stop Sound</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

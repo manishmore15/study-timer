@@ -1,0 +1,223 @@
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c6c6dc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #1a73e8;
+    margin-bottom: 50px;
+    margin-top: 17%;
+    
+}
+
+.inputs {
+    margin-bottom: 4%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="range"] {
+    padding: 8px;
+    border: 1px solid #312c2c;
+    border-radius: 15px;
+    width: 60px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#volume-value {
+    font-size: 0.85rem;
+    margin-left: 10px;
+    color: #333;
+}
+
+/* Timer section with analog clock style */
+.timer-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Round Container for Each Timer */
+.timer-display .timer-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #1a73e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner text for the timer */
+.timer-display .timer-circle span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+}
+
+/* Adding subtle gradients and shadow to the text for more depth */
+.timer-display .timer-circle span {
+    background: -webkit-linear-gradient(#333, #555);
+    -webkit-background-clip:text;
+     background-clip:text;    
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional animation to give clock a ticking feel */
+@keyframes tick {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+/* Applying ticking effect to the circles */
+.timer-circle {
+    animation: tick 1s infinite ease-in-out;
+}
+
+/* Adding some spacing between each timer */
+.timer-display p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Button styles with hover animation */
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ba6bff;
+}
+
+button.hidden {
+    display: none;
+}
+
+/* Bold labels for timers */
+.timer-display p {
+    font-weight: bold;  /* Make labels bold */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Align timers in a single row */
+.timer-display {
+    display: flex;  /* Flexbox for inline timers */
+    justify-content: space-between;  /* Space between timers */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Remove shaking effect */
+.timer-circle {
+    animation: none;  /* Disable the 'tick' animation */
+}
+
+
+/* a new code */
+
+/* Overall container */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+}
+
+/* Top red section */
+.box.red {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+.red .child {
+    flex: 1;
+   
+}
+
+/* Bottom section with two columns */
+.box.lower {
+    display: flex;
+    flex: 1;
+    
+}
+
+.yellow {
+    flex: 1;
+    
+}
+
+.blue {
+    flex: 1;
+    
+}
+
